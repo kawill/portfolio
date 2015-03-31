@@ -111,27 +111,63 @@ nav {
     }
 }
 
+.fa {
+    color: black;
+}
+
 #home {
-    // background: green;
-    background-image: url(../images/flower.jpg);
+    background: #7accc8;
+    // background-image: url(../images/flower.jpg);
     // background-image: url(../images/flower-smaller.jpg);
     background-size: cover;
     background-position: center;
     margin: 0;
-    opacity: 0.7;
+    // // opacity: 0.7;
     min-height: 45rem;
     padding: 28rem 4rem;
     text-align: center;
+    // // margin-top: -4rem;
+    // color: white;
+    ////////below not really used/////////
+    // text-shadow: 2px 2px 2px black;
+    // background-size: cover;
+    // background-position: center;
+    // margin: 0;
+    // opacity: 0.7;
+    // min-height: 45rem;
+    // padding: 28rem 4rem;
+    // text-align: center;
+    ////use hr if styling text of .home-item
+    hr {
+        width: 59%;
+    }
     .home-item {
-        // background: grey;
+        background: grey;
+        width: 47%;
+        margin-left: 32rem;
         // margin: 0 40rem;
         color: black;
-        // border-radius: 10px;
-        // box-shadow: 0 0 10px black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+    }
+    .social-links-home {
+        padding-top: 3rem;
+    }
+    .table-home {
+        padding: 1rem;
+        width: 24%;
+        margin-left: 45rem;
+        // max-width: 100%;
+        // margin-bottom: 20px;
+    }
+    .arrow-down-home {
+        padding: 8rem;
+        width: 24%;
+        margin-left: 47rem;
     }
 }
 
-#portfolioWork {
+#portfolio {
     h1 {
         text-align: center;
     }
@@ -183,7 +219,7 @@ nav {
 }
 
 #contact {
-    background: lightslategray;
+    background: #7accc8;
     color: white;
     h1 {
         text-align: center;
