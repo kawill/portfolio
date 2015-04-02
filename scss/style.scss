@@ -1,16 +1,15 @@
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "./mixins.scss";
-
-
 /**
  * BOX-SIZING
  */
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
-
 /**
  * GRIDS
  */
@@ -21,7 +20,6 @@
     font-size: 0;
     text-align: justify;
     position: relative;
-
     & > * {
         font-size: medium;
         text-align: left;
@@ -29,7 +27,6 @@
         width: 100%;
         vertical-align: top;
     }
-
     &:after {
         display: inline-block;
         width: 100%;
@@ -40,7 +37,6 @@
 
 @include gridify(2, 400);
 @include gridify(4, 600);
-
 /**
  * PACE (automatic pre-loader thingy)
  */
@@ -69,18 +65,18 @@
     height: 2px;
     transition: all 1s ease;
 }
-
 /**
  * COLORS
  */
-$my-red: rgba(255,79,54,1.0);
 
-
+$my-red: rgba(255, 79, 54, 1.0);
 /**
  * GENERAL
  */
 
-img {max-width:100%;}
+img {
+    max-width: 100%;
+}
 
 body {
     transition: opacity .25s ease;
@@ -90,26 +86,25 @@ hr {
     width: 25%;
     text-align: center;
 }
-
 /**
  * SPECIFIC
  */
 
-nav {
-    // background: $my-red;
-    background: black;
-    color: white;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    .menu {
-        text-align: right;
-    }
-    button {
-        margin: 0 auto;
-        display: block;
-    }
-}
+// nav {
+//     // background: $my-red;
+//     background: black;
+//     color: white;
+//     position: fixed;
+//     width: 100%;
+//     z-index: 10;
+//     .menu {
+//         text-align: right;
+//     }
+//     button {
+//         margin: 0 auto;
+//         display: block;
+//     }
+// }
 
 .fa {
     color: black;
@@ -125,6 +120,7 @@ nav {
     // // opacity: 0.7;
     min-height: 45rem;
     padding: 28rem 4rem;
+    padding-bottom: 3rem;
     text-align: center;
     // // margin-top: -4rem;
     // color: white;
@@ -138,50 +134,89 @@ nav {
     // padding: 28rem 4rem;
     // text-align: center;
     ////use hr if styling text of .home-item
+    .home {
+        padding-left: 1rem;
+    }
     hr {
         width: 59%;
     }
     .home-item {
-        background: grey;
+        // background: grey;
+        // border-radius: 10px;
+        // box-shadow: 0 0 10px black;
         width: 47%;
         margin-left: 32rem;
         // margin: 0 40rem;
         color: black;
-        border-radius: 10px;
-        box-shadow: 0 0 10px black;
+        text-align: center;
     }
     .social-links-home {
         padding-top: 3rem;
+        text-align: center;
     }
     .table-home {
         padding: 1rem;
         width: 24%;
         margin-left: 45rem;
+        text-align: center;
         // max-width: 100%;
         // margin-bottom: 20px;
     }
     .arrow-down-home {
         padding: 8rem;
         width: 24%;
-        margin-left: 47rem;
+        margin-left: 46rem;
+        text-align: center;
     }
 }
 
 #portfolio {
+    padding-top: 2.5rem;
     h1 {
         text-align: center;
     }
     hr {
         border-color: black;
     }
-    .portfolio-item {
-        padding: 4rem;
-        margin-bottom: 1rem;
-        background: darkorchid;
+    .item-1 {
+        background: rgb(148, 131, 250);
+        padding-bottom: 4rem;
+        height: 39.2rem;
+        margin-bottom: 2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        border: black;
+        border: 10px;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px;
     }
+    .screen-shot-1 {
+        img {
+            width: 43rem;
+            padding-top: 5rem;
+        }
+        width: 50%;
+        display: inline-block;
+        padding-left: 10rem;
+        padding-top: 3rem;
+    }
+    .item-info-1 {
+        width: 50%;
+        height: 29rem;
+        display: inline-block;
+        padding-left: 4rem;
+        padding-top: 3rem;
+        padding-right: 10rem;
+    }
+    // .portfolio-item {
+    //     padding: 4rem;
+    //     margin-bottom: 1rem;
+    //     background: darkorchid;
+    // }
 }
 
 #about {
+    padding-top: 2.5rem;
     background: lightslategray;
     color: white;
     h1 {
@@ -191,43 +226,61 @@ nav {
         border-color: black;
     }
     .aboutme-item {
-        padding: 3rem;
-    }
-
-}
-
-#skills {
-   padding: 3%;
-   text-align: center;
-   h1 {
+        padding-right: 3rem;
+        padding-left: 3rem;
+        padding-bottom: 3rem;
         text-align: center;
-    }
-    hr {
-        border-color: black;
-    }
-    .group-of-skills > * {
-        border: 1px solid rgba(200,0,0,.3);
-        padding: 3%;
-        img {
-            max-width: 50%;
+        p {
+            padding-left: 30rem;
+            padding-right: 30rem;
+            font-size: 2rem;
+        }
+        a {
+            color: black;
+        }
+        strong {
+            color: black;
         }
     }
-    .skills-item {
-
-        margin-bottom: 1rem;
-    }
 }
 
+// #skills {
+//     padding: 3%;
+//     text-align: center;
+//     h1 {
+//         text-align: center;
+//     }
+//     hr {
+//         border-color: black;
+//     }
+//     .group-of-skills > * {
+//         border: 1px solid rgba(200, 0, 0, .3);
+//         padding: 3%;
+//         img {
+//             max-width: 50%;
+//         }
+//     }
+//     .skills-item {
+//         margin-bottom: 1rem;
+//     }
+// }
 #contact {
+    padding-top: 2.5rem;
+    text-align: center;
     background: #7accc8;
-    color: white;
+    color: black;
     h1 {
         text-align: center;
     }
     hr {
-        border-color: black;
+        border-color: white;
     }
     .contactinfo {
         text-align: center;
+        p {
+            padding-left: 26rem;
+            padding-right: 26rem;
+            font-size: 2rem;
+        }
     }
 }
