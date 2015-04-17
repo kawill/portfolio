@@ -226,13 +226,36 @@ hr {
         border-color: black;
     }
     .aboutme-item {
-        padding-right: 3rem;
-        padding-left: 3rem;
+        // padding-right: 3rem;
+        // padding-left: 3rem;
         padding-bottom: 3rem;
         text-align: center;
+        .recent-info {
+            padding-left: 25rem;
+            padding-right: 18rem;
+        }
+        .skills {
+            h3 {
+                color: black;
+            }
+            tr {
+                display: inline-flex;
+                text-align: left;
+                margin-left: 40rem;
+                font-size: 2rem;
+            }
+
+            // text-align: center;
+        }
+        // span {
+        //     display: inline-block;
+        // }
+        ul {
+            list-style-type: none;
+        }
         p {
-            padding-left: 30rem;
-            padding-right: 30rem;
+            // padding-left: 30rem;
+            // padding-right: 30rem;
             font-size: 2rem;
         }
         a {
