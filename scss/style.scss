@@ -217,13 +217,14 @@ hr {
 
 #about {
     padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
     background: lightslategray;
-    color: white;
+    color: black;
     h1 {
         text-align: center;
     }
     hr {
-        border-color: black;
+        border-color: white;
     }
     .aboutme-item {
         // padding-right: 3rem;
@@ -231,35 +232,101 @@ hr {
         padding-bottom: 3rem;
         text-align: center;
         .recent-info {
-            padding-left: 25rem;
-            padding-right: 18rem;
+            // padding-left: 25rem;
+            // padding-right: 18rem;
+            height: 77.7rem;
+            width: 48%;
+            margin-left: 1.5rem;
+            margin-right: 1rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            padding-left: 8rem;
+            padding-right: 8rem;
+            border: 10px;
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+            border-color: black;
         }
         .skills {
+            width: 48%;
+            margin-left: 1rem;
+            padding-left: 0;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
             h3 {
                 color: black;
             }
             tr {
                 display: inline-flex;
-                text-align: left;
-                margin-left: 40rem;
+                // text-align: left;
+                // margin-left: 40rem;
                 font-size: 2rem;
             }
-
+            // td {
+            //     width: 33%;
+            // }
+            .design-skills {
+                width: 100%;
+                padding-right: 14rem;
+                padding-left: 7rem;
+            }
+            .js-skills {
+                width: 100%;
+            }
+            .tool-skills-left {
+                padding-left: 10rem;
+                padding-right: 15rem;
+                margin-left: -3rem;
+            }
+            .tool-skills-right {
+                padding-left: 5rem;
+                padding-right: 2rem;
+            }
+            .brush {
+                padding-right: 2rem;
+            }
+            .gears {
+                padding-right: 6rem;
+            }
+            .wrench{
+                padding-left: 9rem;
+                padding-right: 13.5rem;
+                padding-top: 2rem;
+            }
+            li {
+                text-align: left;
+                // padding-left: 4rem;
+            }
+            .design {
+                padding-right: 5rem;
+            }
+            .function {
+                padding-left: 0;
+            }
+            .tools {
+                padding-left: 1rem;
+                padding-right: 0;
+            }
+            border: 10px;
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+            border-color: black;
             // text-align: center;
         }
         // span {
         //     display: inline-block;
         // }
         ul {
-            list-style-type: none;
+            // list-style-type: none;
         }
         p {
-            // padding-left: 30rem;
+            padding-left: 4rem;
             // padding-right: 30rem;
             font-size: 2rem;
+            text-align: left;
         }
         a {
-            color: black;
+            color: white;
         }
         strong {
             color: black;
